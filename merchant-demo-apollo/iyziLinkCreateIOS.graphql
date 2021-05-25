@@ -1,0 +1,13 @@
+mutation iyziLinkCreate($input: IyziLinkCreateInput, $fileInput: Upload) {
+  iyziLinkCreateIOS(input: $input, fileInput: $fileInput) {
+    status
+    errorCode
+    errorMessage
+    conversationId
+    data {
+      token
+      imageUrl
+      url
+    }
+  }
+}
